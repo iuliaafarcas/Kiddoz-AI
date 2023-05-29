@@ -1,0 +1,28 @@
+1.	How would you rate the child's skin condition, including any concerns related to pediatric dermatology, such as atopic dermatitis, birthmarks, or psoriasis in children? (1-10 scale)
+	1 Pediatric dermatology (0.2), 2 Atopic dermatitis (0.2), 3 Birthmarks and nevi (0.2), 5 Psoriasis in children (0.2)
+2.	How would you rate the child's nutritional habits and any specific concerns related to prenatal nutrition, breastfeeding support, infant feeding guidelines, or pediatric sports nutrition? (1-10 scale)
+	Domains covered: 11 Prenatal nutrition (0.2), 12 Breastfeeding support (0.2), 13 Infant feeding guidelines (0.2), 17 Pediatric sports nutrition (0.2)
+3.	How would you rate the child's emotional well-being and any specific concerns related to child behavior problems, child mental health, parenting interventions, or emotional regulation skills? (1-10 scale)
+	Domains covered: 21 Child behavior problems (0.2), 22 Child mental health (0.2), 23 Parenting interventions (0.2), 28 Emotional regulation skills (0.2)
+4.	How would you rate the child's dental health and any specific concerns related to early dental care, preventive dentistry, oral habits management, or special needs dentistry? (1-10 scale)
+	Domains covered: 31 Early dental care (0.1), 32 Preventive dentistry (0.2), 33 Oral habits management (0.2), 34 Special needs dentistry (0.2)
+5.	How would you rate the child's safety and any specific measures taken for childhood injury prevention, pediatric palliative care, or adolescent medicine counseling? (1-10 scale)
+	Domains covered: 41 Childhood injury prevention (0.2), 42 Pediatric palliative care (0.2), 43 Adolescent medicine counseling (0.2)
+6.	How would you rate the child's growth and development, particularly in the areas of child cognitive development, child trauma treatment, school psychology services, or child anxiety disorders? (1-10 scale)
+	Domains covered: 24 Child cognitive development (0.2), 25 Child trauma treatment (0.2), 26 School psychology services (0.2), 27 Child anxiety disorders (0.2)
+7.	How would you rate the child's physical abilities and any specific needs for early motor development, pediatric physical therapy, neuromuscular disorders management, or gross motor skills development? (1-10 scale)
+	Domains covered: 51 Early motor development (0.2), 52 Pediatric physical therapy (0.2), 53 Neuromuscular disorders management (0.2), 54 Gross motor skills development(0.2)
+8.	How would you rate the child's neonatal care and any specific concerns related to neonatal pharmacology, retinopathy of prematurity, neonatal infection treatment, or infant nutrition support? (1-10 scale)
+	Domains covered: 49 Neonatal care management (0.2), 61 Neonatal pharmacology (0.2), 62 Retinopathy of prematurity (0.2), 64 Neonatal infection treatment (0.2), 65 Infant nutrition support (0.2)
+9.	How would you rate the child's overall oral health and any specific needs for orthodontic intervention planning, dental caries prevention, fluoride treatments, or teething and eruption? (1-10 scale)
+	Domains covered: 31 Early dental care (0.1), 36 Orthodontic intervention planning (0.2), 37 Dental caries prevention (0.2), 38 Fluoride treatments (0.2), 39 Teething and eruption (0.2)
+10.	How would you rate the child's overall growth and development, with a focus on areas such as neurodevelopmental follow-up, birth defects management, newborn screening tests, or prematurity complications management? (1-10 scale)
+	Domains covered: 48 Growth and development monitoring (0.2), 63 Neurodevelopmental follow-up (0.2), 66 Birth defects management (0.2), 67 Newborn screening tests (0.2), 70 Prematurity complications management (0.2)
+
+
+
+
+
+
+
+
