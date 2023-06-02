@@ -8,7 +8,7 @@ import pandas as pd
 
 if __name__ == '__main__':
     model = create_model(15, 5)
-    # generateDataSet(10000, 15)
+    generateDataSet(10000, 15)
 
     df = pd.read_csv("question_scores_dataset.csv")
 

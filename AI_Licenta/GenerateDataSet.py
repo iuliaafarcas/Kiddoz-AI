@@ -5,28 +5,40 @@ import numpy as np
 
 def generateDataSet(num_samples, num_questions):
     # Create an empty list to store the data
+
+    generatedCases = []
+    for _ in range(5):
+        generatedCases.append([0, 0])
+
     data = []
-
-    # Generate random question scores between 0 and 5 for each sample
-    for _ in range(num_samples):
-        sample_data = []
-        for i in range(num_questions):
-            score = random.randint(0, 5)
-            sample_data.append(score)
-        data.append(sample_data)
-
     all_scores = []
-    for answer in data:
-        scores = [0 for _ in range(5)]
-        scores[0]=calculate_for_nutrition(answer)
-        scores[1]=calculate_for_anxiety(answer)
-        scores[2]=calculate_for_communication(answer)
-        scores[3]=calculate_for_concentration(answer)
-        scores[4]=calculate_for_sport(answer)
 
-        scores = normalize_scores(scores)
+    # Generate random question scores between 1 and 5 for each sample
+    for _ in range(num_samples):
+        caseGenerated = False
+        while not caseGenerated:
+            sample_data = []
+            for i in range(num_questions):
+                score = random.randint(1, 5)
+                sample_data.append(score)
+            scores = [0 for _ in range(5)]
+            scores[0] = calculate_for_nutrition(sample_data)
+            scores[1] = calculate_for_anxiety(sample_data)
+            scores[2] = calculate_for_communication(sample_data)
+            scores[3] = calculate_for_concentration(sample_data)
+            scores[4] = calculate_for_sport(sample_data)
+            scores = normalize_scores(scores)
 
-        all_scores.append(scores)
+            caseGenerated = True
+            for i in range(5):
+                if generatedCases[i][scores[i]] >= num_samples // 2:
+                    caseGenerated = False
+                    break
+            if caseGenerated:
+                all_scores.append(scores)
+                data.append(sample_data)
+                for i in range(5):
+                    generatedCases[i][scores[i]] += 1
 
     # Create a DataFrame from the data list
     df = pd.DataFrame(np.column_stack([data, all_scores]), columns=[f"Q{i}" for i in range(1, num_questions + 1)] +
@@ -43,7 +55,7 @@ def calculate_for_nutrition(answers):
 
 def calculate_for_anxiety(answers):
     relevant = answers[3:6]
-    return 0.1 * relevant[0] + 0.05 * relevant[1] + 0.5 * relevant[2]
+    return 0.1 * relevant[0] + 0.05 * relevant[1] + 0.05 * relevant[2]
 
 
 def calculate_for_communication(answers):
